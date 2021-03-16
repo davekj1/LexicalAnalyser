@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Python button 
+	</title>
+</head>
+<body>
+
+<form action="/external/" method="post">
+	<h3 style="text-align: center;">Enter C code</h3><br><br>
+	{% csrf_token %}
+	<textarea rows="30" cols="150" name="param" style="position: relative;left: 8%;background-color: cyan" required>{{data2}}</textarea>
+	<br><br>
+	<input type="submit" style="position: relative;left: 45%;background-color: red;padding: 10px" value="Show">
+	{{data_external}}<br><br>
+	<textarea rows="20" cols="150" style="position: relative;left:8%;background-color: yellow">{{data1}}</textarea><br><br>
+	
+</form>
+</body>
+</html>
